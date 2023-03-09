@@ -30,7 +30,6 @@ else
     Console.WriteLine("Invalid operator.");
     return;
 }
-
 Console.WriteLine("The result is: " + result);
 
 Console.ReadKey();
