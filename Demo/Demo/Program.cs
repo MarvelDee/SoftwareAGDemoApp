@@ -31,5 +31,4 @@ else
     return;
 }
 Console.WriteLine("The result is: " + result);
-
 Console.ReadKey();
