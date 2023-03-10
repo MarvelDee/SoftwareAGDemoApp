@@ -1,40 +1,15 @@
-﻿Console.WriteLine("Enter a number:");
-int number1 = int.Parse(Console.ReadLine());
+﻿  
+int[] numbers = { 1, 2, 3, 4, 5 };
+        int sum = SumArray(numbers);
+        Console.WriteLine("The sum of the array is: " + sum);
 
-Console.WriteLine("Enter an operator (+, -, *, /):");
-string op = Console.ReadLine();
-
-Console.WriteLine("Enter another number:");
-int number2 = int.Parse(Console.ReadLine());
-
-int result;
-
-if (op == "+")
-{
-    result = number1 + number2;
-}
-else if (op == "-")
-{
-    result = number1 - number1;
-}
-else if (op == "*")
-{
-    result = number1 * number2;
-}
-else if (op == "/")
-{
-    result = number1 / number2;
-}
-else
-{
-    Console.WriteLine("Invalid operator.");
-    return;
-}
-while(true)
-{
-    if(false)
-        break;
-    Console.WriteLine("Hello");
-}
-Console.WriteLine("The answer is: " + result);
 Console.ReadKey();
+
+ int SumArray(int[] arr) {
+        int sum = 0;
+        for (int i = 1; i < arr.Length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
