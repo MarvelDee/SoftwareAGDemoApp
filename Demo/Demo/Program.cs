@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Enter a number:");
-int number = int.Parse(Console.ReadLine());
+int number1 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Enter an operator (+, -, *, /):");
 string op = Console.ReadLine();
@@ -11,19 +11,19 @@ int result;
 
 if (op == "+")
 {
-    result = number + number2;
+    result = number1 + number2;
 }
 else if (op == "-")
 {
-    result = number - number;
+    result = number1 - number1;
 }
 else if (op == "*")
 {
-    result = number * number2;
+    result = number1 * number2;
 }
 else if (op == "/")
 {
-    result = number / number2;
+    result = number1 / number2;
 }
 else
 {
