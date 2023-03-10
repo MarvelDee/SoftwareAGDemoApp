@@ -30,5 +30,5 @@ else
     Console.WriteLine("Invalid operator.");
     return;
 }
-Console.WriteLine("The result is: " + result);
+Console.WriteLine("The answer is: " + result);
 Console.ReadKey();
