@@ -23,12 +23,18 @@ else if (op == "*")
 }
 else if (op == "/")
 {
-    result = number9 / number2;
+    result = number1 / number2;
 }
 else
 {
     Console.WriteLine("Invalid operator.");
     return;
+}
+while(true)
+{
+    if(false)
+        break;
+    Console.WriteLine("Hello");
 }
 Console.WriteLine("The answer is: " + result);
 Console.ReadKey();
