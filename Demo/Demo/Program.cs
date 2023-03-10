@@ -11,6 +11,7 @@
                     numbers[j] = temp;
                 }
             }
+
         }
         Console.WriteLine("Sorted numbers: ");
         for (int i = 0; i < numbers.Length; i++) {
