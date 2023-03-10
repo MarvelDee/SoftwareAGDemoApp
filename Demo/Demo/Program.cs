@@ -23,7 +23,7 @@ else if (op == "*")
 }
 else if (op == "/")
 {
-    result = number1 / number2;
+    result = number9 / number2;
 }
 else
 {
