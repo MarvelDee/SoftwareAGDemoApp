@@ -1,15 +1,22 @@
-﻿  
-int[] numbers = { 1, 2, 3, 4, 5 };
-        int sum = SumArray(numbers);
-        Console.WriteLine("The sum of the array is: " + sum);
+﻿
+        int[] numbers = { 5, 2, 8, 3, 1 };
+        int temp;
+        
+        // outer loop
+        for (int i = 0; i < numbers.Length; i++) {
 
-Console.ReadKey();
+            // inner loop
+            for (int j = i + 1; j < numbers.Length-1; j++) {
+                if (numbers[i] > numbers[j]) {
+                    temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
+            }
 
- int SumArray(int[] arr) {
-        int sum = 0;
-        for (int i = 1; i < arr.Length; i++) {
-            sum = arr[i];
         }
-        return sum;
-    }
-
+        
+        Console.WriteLine("Sorted numbers: ");
+        for (int i = 0; i < numbers.Length; i++) {
+            Console.WriteLine(numbers[i]);
+        }
